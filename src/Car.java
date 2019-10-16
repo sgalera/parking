@@ -1,3 +1,3 @@
 public class Car {
-    boolean ticket;
+    public boolean ticket;
 }

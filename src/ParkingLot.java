@@ -1,5 +1,11 @@
 public class ParkingLot {
-    private int openSpots;
-    Entrance inGate = new Entrance();
-    Exit outGate = new Exit();
+    protected int openSpots;
+    protected int revenue;
+    Entrance inGate;
+    Exit outGate;
+    ParkingLot() {
+        openSpots = 10;
+        inGate = new Entrance();
+        outGate = new Exit();
+    }
 }

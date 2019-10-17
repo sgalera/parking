@@ -6,8 +6,5 @@ public class Exit {
             ParkingLot.revenue = ParkingLot.revenue + cost;
             System.out.println(c.name + " is now leaving the parking lot.");
         }
-        else {
-            System.out.println(c.name + " lost his/her ticket.");
-        }
     }
 }

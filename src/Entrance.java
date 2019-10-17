@@ -6,7 +6,7 @@ public class Entrance {
             System.out.println(c.name + " is now entering the parking lot.");
         }
         else {
-            System.out.println("Parking Lot is full.");
+            System.out.println("Parking lot is full.");
         }
     }
 }

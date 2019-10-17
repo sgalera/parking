@@ -4,5 +4,6 @@ public class Main {
         Car c1 = new Car("Jess");
         lot.run(c1);
         lot.printRevenue();
+        lot.printOpenSpots();
     }
 }

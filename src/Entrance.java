@@ -1,8 +1,8 @@
-public class Entrance extends ParkingLot {
+public class Entrance {
     public void enter(Car c) {
-        if(openSpots != 0) {
+        if(ParkingLot.openSpots != 0) {
             c.ticket = true;
-            openSpots--;
+            ParkingLot.openSpots--;
             System.out.println(c.name + " is now entering the parking lot.");
         }
         else {

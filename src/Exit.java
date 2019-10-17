@@ -1,10 +1,9 @@
-public class Exit extends ParkingLot {
-    private int cost;
+public class Exit {
+    private int cost = 7;
     public void leave(Car c) {
         if(c.ticket = true) {
             c.ticket = false;
-            openSpots++;
-            revenue = revenue + cost;
+            ParkingLot.revenue = ParkingLot.revenue + cost;
             System.out.println(c.name + " is now leaving the parking lot.");
         }
         else {

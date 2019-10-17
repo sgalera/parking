@@ -1,12 +1,13 @@
 public class Entrance {
-    public void enter(Car c) {
-        if(ParkingLot.openSpots != 0) {
+    public int enter(Car c, int spots) {
+        if(spots != 0) {
             c.ticket = true;
-            ParkingLot.openSpots--;
+            spots--;
             System.out.println(c.name + " is now entering the parking lot.");
         }
         else {
             System.out.println("Parking lot is full.");
         }
+        return spots;
     }
 }

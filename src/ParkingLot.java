@@ -1,17 +1,16 @@
 public class ParkingLot {
-    static int openSpots;
+    private int openSpots;
     static int revenue;
     Entrance inGate;
     Exit outGate;
     ParkingLot() {
-        openSpots = 1;
-        revenue = 0;
+        openSpots = 10;
         inGate = new Entrance();
         outGate = new Exit();
     }
     public void run(Car c) {
-        inGate.enter(c);
-        outGate.leave(c);
+        openSpots = inGate.enter(c, openSpots);
+        openSpots = outGate.leave(c, openSpots);
     }
     public void printOpenSpots() {
         System.out.println("Number of open spots: " + openSpots);

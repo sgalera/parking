@@ -4,7 +4,7 @@ public class ParkingLot {
     Entrance inGate;
     Exit outGate;
     ParkingLot() {
-        openSpots = 10;
+        openSpots = 1;
         revenue = 0;
         inGate = new Entrance();
         outGate = new Exit();

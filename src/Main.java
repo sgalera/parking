@@ -1,11 +1,13 @@
 public class Main {
     public static void main(String[] args) {
+
+        Car c1 = new Car("Jess", "10:00");
+        Car c2 = new Car("Alex", "12:00");
         ParkingLot lot = new ParkingLot();
-        Car c1 = new Car("Jess");
-        Car c2 = new Car("Alex");
-        lot.run(c1);
-        lot.run(c2);
-        lot.printRevenue();
-        lot.printOpenSpots();
+        lot.entering(c1);
+        lot.entering(c2);
+        lot.leaving(c1.name);
+        lot.leaving(c2.name);
+
     }
 }

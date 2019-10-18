@@ -22,13 +22,13 @@ public class ParkingLot {
             System.out.println("Parking lot is full.");
         }
     }
-    public void leaving(String a)
+    public void leaving(String n, String t)
     {
         int b = 0;
         while(b < lot.size())
         {
             Car check = lot.get(b);
-            if(check.name.equals(a)) {
+            if(check.name.equals(n) && check.timeEnter.equals(t)) {
                 outGate.leave(check);
                 lot.remove(check);
                 openSpots++;
@@ -41,6 +41,6 @@ public class ParkingLot {
         System.out.println("Number of open spots: " + openSpots);
     }
     public void printRevenue() {
-        System.out.println("Total Revenue: " + revenue);
+        System.out.println("Total Revenue: $" + revenue);
     }
 }

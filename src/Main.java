@@ -28,7 +28,7 @@ public class Main {
                 parkingLot.entering(car);
             }
             else if(choice.equals("exit")) {
-                parkingLot.leaving(name);
+                parkingLot.leaving(name, time);
             }
             lineScanner.close();
         }

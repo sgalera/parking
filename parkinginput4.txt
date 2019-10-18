@@ -1,0 +1,8 @@
+Ryan 5:00 exit
+Jordan 6:00 exit
+Layla 6:30 enter
+Layla 6:30 exit
+Ray 7:00 enter
+Ray 7:00 exit
+Jesse 9:00 enter
+Jesse 9:00 exit

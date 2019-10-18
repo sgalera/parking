@@ -1,2 +1,2 @@
 Chad 1:00 enter
-Chad 00:00 exit
+Chad 1:00 exit

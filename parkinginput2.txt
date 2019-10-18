@@ -1,0 +1,6 @@
+Jane 10:00 enter
+Tess 12:00 enter
+Bryan 12:00 enter
+Tess 00:00 exit
+Jane 00:00 exit
+Bryan 00:00 exit

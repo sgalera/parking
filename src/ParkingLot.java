@@ -8,7 +8,7 @@ public class ParkingLot {
     Exit outGate;
 
     ParkingLot() {
-        openSpots = 3;
+        openSpots = 5;
         inGate = new Entrance();
         outGate = new Exit();
     }
@@ -28,7 +28,7 @@ public class ParkingLot {
         while(b < lot.size())
         {
             Car check = lot.get(b);
-            if(check.name == a) {
+            if(check.name.equals(a)) {
                 outGate.leave(check);
                 lot.remove(check);
                 openSpots++;

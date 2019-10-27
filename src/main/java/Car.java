@@ -22,4 +22,17 @@ public class Car {
         }
         return low;
     }
+
+    public ParkingLot getLowestSpots(LinkedList<ParkingLot> lots) {
+        ParkingLot low = lots.get(0);
+        int b = 1;
+        while(b < lots.size())
+        {
+            if(lots.get(b).openSpots < low.openSpots) {
+                low = lots.get(b);
+            }
+            b++;
+        }
+        return low;
+    }
 }

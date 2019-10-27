@@ -1,16 +1,13 @@
 import java.util.LinkedList;
 
 public class ParkingLot {
-    static int lotCount = 0;
-    private int lotNum;
-    private int openSpots;
+    public int openSpots;
     private LinkedList<Car> lot = new LinkedList<Car>();
     Entrance inGate;
     Exit outGate;
 
     ParkingLot() {
         openSpots = 5;
-        lotNum = lotCount++;
         inGate = new Entrance();
         outGate = new Exit();
     }

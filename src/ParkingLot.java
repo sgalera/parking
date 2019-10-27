@@ -1,17 +1,20 @@
 import java.util.LinkedList;
 
 public class ParkingLot {
+    static int lotCount = 0;
+    private int lotNum;
     private int openSpots;
-    static int revenue;
     private LinkedList<Car> lot = new LinkedList<Car>();
     Entrance inGate;
     Exit outGate;
 
     ParkingLot() {
         openSpots = 5;
+        lotNum = lotCount++;
         inGate = new Entrance();
         outGate = new Exit();
     }
+
     public void entering(Car c) {
         if(openSpots != 0) {
             inGate.enter(c);
@@ -22,6 +25,7 @@ public class ParkingLot {
             System.out.println("Parking lot is full.");
         }
     }
+
     public void leaving(String n, String t)
     {
         int b = 0;
@@ -39,8 +43,5 @@ public class ParkingLot {
     }
     public void printOpenSpots() {
         System.out.println("Number of open spots: " + openSpots);
-    }
-    public void printRevenue() {
-        System.out.println("Total Revenue: $" + revenue);
     }
 }

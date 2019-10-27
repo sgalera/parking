@@ -8,7 +8,6 @@ public class Main {
         File text = null;
         Car car = null;
         ParkingLot parkingLot = new ParkingLot();
-        String line = null;
         String name = null;
         String time = null;
         String choice = null;
@@ -33,7 +32,5 @@ public class Main {
             lineScanner.close();
         }
         fileScanner.close();
-
-        parkingLot.printRevenue();
     }
 }
